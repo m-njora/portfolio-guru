@@ -2,9 +2,13 @@ import React from 'react'
 import "./navbar.css"
 import { Link } from'react-router-dom'
 
-const Navbar = ({show}) => {
+
+  
+
+// const Navbar = ({show}) => {
+  function Navbar (){
   return (
-    <div className={show} >
+    // <div className={show} >
       <nav className="navMenu">
         <ul>
           <li>
@@ -18,7 +22,7 @@ const Navbar = ({show}) => {
           </li>
         </ul>
       </nav>
-    </div>
+    // </div>
   )
 }
 
