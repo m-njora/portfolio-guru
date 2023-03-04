@@ -5,29 +5,77 @@ import './login.css'
 function Login() {
 
 
-     const [signIn, toggle] = React.useState(true);
-    
+  const [signIn, toggle] = React.useState(true);
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
 
+  const handleRegister = () => {
+    fetch("http://127.0.0.1:9292/auth/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        password: password
+      })
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(response.status);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  };
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+
+    fetch("http://127.0.0.1:9292/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, password }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // Handle successful login
+        console.log(data);
+      })
+      .catch((error) => {
+        // Handle login error
+        console.error(error);
+      });
+  };
 
     return(
         <Components.Container>
             <Components.SignUpContainer signinIn={signIn}>
                 <Components.Form>
                     <Components.Title>Register</Components.Title>
-                    <Components.Input type='text' placeholder='Name' />
-                    <Components.Input type='email' placeholder='Email' />
-                    <Components.Input type='password' placeholder='Password' />
-                    <Components.Button>Register</Components.Button>
+                    <Components.Input type='text' placeholder='Name' value={name} onChange={event => setName(event.target.value)}/>
+                    <Components.Input type='email' placeholder='Email'value={email} onChange={event => setEmail(event.target.value)}/>
+                    <Components.Input type='password' placeholder='Password' value={password} onChange={event => setPassword(event.target.value)}/>
+                    <Components.Button onClick={handleRegister}>Register</Components.Button>
                 </Components.Form>
             </Components.SignUpContainer>
 
             <Components.SignInContainer signinIn={signIn}>
                  <Components.Form>
                      <Components.Title>Log in</Components.Title>
-                     <Components.Input type='email' placeholder='Email' />
-                     <Components.Input type='password' placeholder='Password' />
+                     <Components.Input type='email' placeholder='Email' value={email} onChange={(event) => setEmail(event.target.value)}/>
+                     <Components.Input type='password' placeholder='Password' value={password} onChange={(event) => setPassword(event.target.value)}/>
                      <Components.Anchor href='#'>Forgot your password?</Components.Anchor>
-                     <Components.Button>Log In</Components.Button>
+                     <Components.Button onClick={handleLogin}>Log In</Components.Button>
                  </Components.Form>
             </Components.SignInContainer>
 
