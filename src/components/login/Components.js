@@ -69,8 +69,8 @@ border-radius: 16px;
 
 export const Button = styled.button`
    border-radius: 20px;
-   border: 1px solid #ff4b2b;
-   background-color: #ff4b2b;
+   border: 1px solid #ECF0F1;
+   background: linear-gradient(90deg, #FF00A0 0%, #333399 100%);
    color: #ffffff;
    font-size: 12px;
    font-weight: bold;

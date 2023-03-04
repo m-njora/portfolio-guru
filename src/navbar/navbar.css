@@ -1,79 +1,44 @@
-.navMenu {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px 80px;
+  border-radius: 16px;
+
+}
+
+
+.navbar li{
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
-  
-  .navMenu li {
-    color: #000000;
+  .navbar li a{
     text-decoration: none;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: 500;
-    display: inline-block;
-    width: 80px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:  #ECF0F1;
+    transition: 0.3s ease-in-out;
   }
-  
-  .navMenu li:hover {
-    color: #fddb3a;
-  }
-  
-  .navMenu .dot {
-    width: 6px;
-    height: 6px;
-    background: #fddb3a;
-    border-radius: 50%;
-    opacity: 0;
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .navMenu li:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .navMenu li:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(110px);
-    transform: translateX(110px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .navMenu li:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  /* .navMenu li:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(285px);
-    transform: translateX(285px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
+  /* .navbar li a:hover{
+    color: linear-gradient(90deg, #FF00A0 0%, #333399 100%);
   } */
+.navbar li a:hover::after,
+.navbar li a.active::after{
+    content:"";
+    width :30%;
+    height :2px;
+   background: linear-gradient(90deg, #FF00A0 0%, #333399 100%);
+    position: absolute;
+    bottom:-4px;
+    left:20px;
 
-/* .noShow{
-    display: none;
 }
-
-.show{
-    display: block
-}
-Footer
-© 2023 GitHub, Inc.
-Footer navigatio */

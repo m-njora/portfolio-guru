@@ -1,6 +1,9 @@
 import React from 'react'
 import "./navbar.css"
 import { Link } from'react-router-dom'
+// import { AiOutlineLogin, AiOutlineUserAdd} from "react-icons/ai";
+// import {BiLogOutCircle} from "react-icons/bi"
+
 
 
   
@@ -9,7 +12,7 @@ import { Link } from'react-router-dom'
   function Navbar (){
   return (
     // <div className={show} >
-      <nav className="navMenu">
+      <nav className="navbar">
         <ul>
           <li>
             <Link className='navbar' to="/">About</Link>
@@ -26,4 +29,29 @@ import { Link } from'react-router-dom'
   )
 }
 
-export default Navbar
+// export default Navbar
+// function Navbar(){
+//   return(
+//       <div id="navbarDivs">
+//       <div> 
+//           <h2  className="logo">ME<span>+</span></h2>
+//       </div>
+//       <nav id="navbar" >
+          
+//           <a href="#"><Link className='navbar' to="/">HOME</Link></a>
+//           <a href="#"><Link className='navbar' to="/projects">PROJECTS</Link></a>
+//           <a href="#"><Link className='navbar' to="/add">ADD+</Link></a>
+//           <a href="#"><Link className='navbar' to="/add"><AiOutlineUserAdd/></Link></a>
+//           <div id="indicator"></div>     
+//       </nav>
+//       <div>
+//           <p className="login"><span id="logoutIcon"><BiLogOutCircle/></span></p>
+//       </div>
+
+
+//       </div>
+//   )
+// }
+
+ export default Navbar;
+
