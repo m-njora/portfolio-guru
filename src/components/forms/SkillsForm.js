@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './form.css';
 
 function SkillsForm() {
   const [skills, setSkills] = useState([]);
@@ -38,7 +39,7 @@ function SkillsForm() {
   };
 
   return (
-    <div>
+    <div className='form'>
       <h2>Skills Form</h2>
       <form onSubmit={handleAddSkill}>
         <label htmlFor="new-skill">New Skill:</label>

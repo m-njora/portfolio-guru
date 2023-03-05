@@ -1,14 +1,5 @@
-// import React from 'react'
-
-// function ProjectsForm() {
-//     return (
-//         <></>
-//     )
-// }
-
-// export default ProjectsForm
 import React, { useState } from 'react';
-
+import './form.css';
 function ProjectsForm() {
   const [Projects, setProjects] = useState([]);
   const [newProject, setNewProject] = useState('');
@@ -47,7 +38,7 @@ function ProjectsForm() {
   };
 
   return (
-    <div>
+    <div className='form'>
       <h2>Projects Form</h2>
       <form onSubmit={handleAddProject}>
         <label htmlFor="new-Project">New Project:</label>

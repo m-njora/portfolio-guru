@@ -1,0 +1,93 @@
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form h2 {
+    text-align: center;
+  }
+  
+  .form form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .form label {
+    display: block;
+    margin-right: 10px;
+    width: 100px;
+  }
+  
+  .form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form button[type="submit"],
+  .form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  .form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .form button {
+    margin-left: 5px;
+  }
+  
+  .form ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .form li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form li input[type="text"] {
+    margin-right: 10px;
+  }
+  
+  .form li button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form li button:hover {
+    background-color: #c62828;
+  }
+  
+  .form li:last-child {
+    margin-bottom: 0;
+  }
+  
