@@ -1,9 +1,12 @@
 import React from 'react'
+import SkillsForm from '../forms/SkillsForm'
 
 function Profile() {
     return (
-        <>this is the users profile</>
+        <div>
+        <SkillsForm/>
+        </div>
     )
 }
 
-export default Profile
+export default Profile;

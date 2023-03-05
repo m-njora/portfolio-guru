@@ -23,7 +23,7 @@ import { Link } from'react-router-dom'
             <Link className='navbar' to="/profile">Profile</Link>
           </li>
           <li>
-            <Link className='navbar' to="/login">Log out <ion-icon name="log-out-outline"></ion-icon></Link>
+            <Link className='navbar' to="/login">Log out </Link>
           </li>
         </ul>
       </nav>
