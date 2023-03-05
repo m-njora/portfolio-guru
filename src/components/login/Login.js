@@ -1,16 +1,19 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import * as Components from './Components'
 import './login.css'
+import { Redirect } from 'react-router-dom';
 
-function Login() {
+function Login({onLogin}) {
 
-
+  const [loggedIn, setLoggedIn] = useState(false);
   const [signIn, toggle] = React.useState(true);
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
 
   const handleRegister = () => {
+
+
     fetch("http://127.0.0.1:9292/auth/register", {
       method: "POST",
       headers: {
@@ -34,6 +37,7 @@ function Login() {
       .catch(error => {
         console.error(error);
       });
+
   };
 
   const handleLogin = (event) => {
@@ -55,10 +59,13 @@ function Login() {
         // Handle login error
         console.error(error);
       });
+      setLoggedIn(true);
   };
 
     return(
         <Components.Container>
+                {loggedIn && <Redirect to="/profile" />}
+
             <Components.SignUpContainer signinIn={signIn}>
                 <Components.Form>
                     <Components.Title>Register</Components.Title>

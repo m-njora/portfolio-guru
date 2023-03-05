@@ -6,14 +6,25 @@ import About from '../about/about.js';
 import Profile from '../profile/profile.js';
 
 function App() {
+  const [loggedIn, setLoggedIn] = React.useState(false);
+
+  function handleLogin(){
+        // Set the loggedIn state to true after successful login
+
+    setLoggedIn(true);
+  }
+  function handleLogout(){
+    // Set the loggedIn state to false after successful logout
+    setLoggedIn(false);
+  }
   return (
     <Router>
     <div>
       <Navbar />
       <Switch>
         <Route exact path="/" component={About} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/login" component={Login} />
+        <Route path="/login" component={Login}  onLogin={handleLogin}/>
+        <Route path="/profile" render={() => <Profile onLogout={handleLogout} />}  /> 
       </Switch>
     </div>
   </Router>
