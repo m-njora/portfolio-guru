@@ -3,10 +3,18 @@ import "./about.css"
 
 function About() {
     return (
-        <div className="about">
+        <div className="about-container">
         <h1>Welcome to our landing page</h1>
-        <p>We are a company that specializes in building websites and web applications. Our team of experienced developers and designers are passionate about creating high-quality products that meet the needs of our clients.</p>
+        <div class="left">
+        <h3>"Unleash your creativity, showcase your work with ease."</h3>
+        </div>
+        <div class="right">
+        <h3>"Start building your stunning portfolio today!"</h3>
         <button>Contact us</button>
+
+        </div>
+
+        
       </div>
   
     )
