@@ -19,9 +19,9 @@ import { Link } from'react-router-dom'
           <li>
             <Link className='navbar' to="/">About</Link>
           </li>
-          <li>
+          {/* <li>
             <Link className='navbar' to="/profile">Profile</Link>
-          </li>
+          </li> */}
           <li>
             <Link className='navbar' to="/login">Log out </Link>
           </li>
