@@ -90,7 +90,7 @@ body{
 
   }
   
-  button {
+  .about-container button {
     margin-top: 20px;
     padding: 10px 20px;
     background:linear-gradient(90deg, #FF00A0 0%, #333399 100%);
