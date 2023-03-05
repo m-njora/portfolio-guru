@@ -7,26 +7,34 @@ import Profile from '../landingpage /profile.js';
 
 function App() {
   return (
+    <Router>
     <div>
-         <Router>
       <Navbar />
       <Switch>
-        <Route exact path="/">
-          <About />
-        </Route>
-        <Route path="/profile">
-          <Profile />
-        </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
+        <Route exact path="/" component={About} />
+        <Route path="/portfolio" component={Profile} />
+        <Route path="/login" component={Login} />
       </Switch>
-    </Router>
- 
-    {/* <Login/>
-    <Navbar/> */}
-
     </div>
+  </Router>
+
+    // <div>
+    //      <Router>
+    //   <Navbar />
+    //   <Switch>
+    //     <Route exact path="/">
+    //       <About />
+    //     </Route>
+    //     <Route path="/profile">
+    //       <Profile />
+    //     </Route>
+    //     <Route path="/login">
+    //       <Login />
+    //     </Route>
+    //   </Switch>
+    // </Router>
+ 
+    //   </div>
   )
 }
 

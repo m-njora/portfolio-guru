@@ -14,6 +14,7 @@ import { Link } from'react-router-dom'
   return (
     // <div className={show} >
       <nav className="navbar">
+        <h2>Portfolio Guru</h2>
         <ul>
           <li>
             <Link className='navbar' to="/">About</Link>
