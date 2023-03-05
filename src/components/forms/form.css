@@ -2,12 +2,19 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ECF0F1;
+    border-radius: 12px;
+    box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.25), -4px -4px 8px rgba(255, 255, 255, 0.75), 8px 8px 12px rgba(189, 195, 199, 0.25), 4px 4px 8px rgba(189, 195, 199, 0.75);
+
   }
   
   .form h2 {
     text-align: center;
+    background: linear-gradient(90deg, #FF00A0 0%, #333399 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .form form {
@@ -19,26 +26,32 @@
     display: block;
     margin-right: 10px;
     width: 100px;
+    color: #586E75;
   }
   
   .form input[type="text"] {
     flex: 1;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 16px;
+    border: 1px solid #ECF0F1;
+    box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.75), inset 2px 2px 8px #BDC3C7;
+
   }
   
   .form button[type="submit"],
   .form button {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 16px;
     border: none;
     cursor: pointer;
   }
   
   .form button[type="submit"] {
-    background-color: #4caf50;
-    color: #fff;
+    background: linear-gradient(90deg, #FF00A0 0%, #333399 100%);    color: #fff;
+    box-shadow: -4px -4px 12px rgba(240, 4, 160, 0.19), 4px 4px 8px #FFFFFF, inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
     margin-left: 10px;
   }
   
@@ -47,7 +60,7 @@
   }
   
   .form button[type="submit"]:disabled {
-    background-color: #ccc;
+    background-color: #ECF0F1;
     cursor: not-allowed;
   }
   
@@ -66,21 +79,26 @@
     align-items: center;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
+    border-radius: 16px;
+    border: 1px solid #ECF0F1;
+    box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.25), -4px -4px 8px rgba(255, 255, 255, 0.75), 8px 8px 12px rgba(189, 195, 199, 0.25), 4px 4px 8px rgba(189, 195, 199, 0.75);
+}
   
   .form li input[type="text"] {
     margin-right: 10px;
   }
   
   .form li button {
-    background-color: #f44336;
-    color: #fff;
+    background-color: #ECF0F1;
+    color: #FFFFFF;
+    font-weight: 700;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 16px;
     border: none;
     cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.75), inset 2px 2px 8px #BDC3C7;
+
+
   }
   
   .form li button:hover {
@@ -90,4 +108,8 @@
   .form li:last-child {
     margin-bottom: 0;
   }
-  
+  .form p{
+    text-align: center;
+    color: #586E75;
+
+  }

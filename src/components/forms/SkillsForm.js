@@ -40,7 +40,7 @@ function SkillsForm() {
 
   return (
     <div className='form'>
-      <h2>Skills Form</h2>
+      <h2>My Skills</h2>
       <form onSubmit={handleAddSkill}>
         <label htmlFor="new-skill">New Skill:</label>
         <input
@@ -65,7 +65,7 @@ function SkillsForm() {
               ) : (
                 <>
                   <button onClick={() => handleEditSkill(index)}>Edit</button>
-                  <button onClick={() => handleDeleteSkill(index)}>Delete</button>
+                  <button onClick={() => handleDeleteSkill(index)}>X</button>
                 </>
               )}
             </li>

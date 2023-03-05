@@ -39,7 +39,7 @@ function ProjectsForm() {
 
   return (
     <div className='form'>
-      <h2>Projects Form</h2>
+      <h2>My Projects </h2>
       <form onSubmit={handleAddProject}>
         <label htmlFor="new-Project">New Project:</label>
         <input
@@ -64,7 +64,7 @@ function ProjectsForm() {
               ) : (
                 <>
                   <button onClick={() => handleEditProject(index)}>Edit</button>
-                  <button onClick={() => handleDeleteProject(index)}>Delete</button>
+                  <button onClick={() => handleDeleteProject(index)}>X</button>
                 </>
               )}
             </li>
