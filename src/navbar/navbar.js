@@ -14,16 +14,27 @@ import { Link } from'react-router-dom'
   return (
     // <div className={show} >
       <nav className="navbar">
-        <h2>Portfolio Guru</h2>
         <ul>
-          {/* <li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+          <li>
             <Link className='navbar' to="/">About</Link>
-          </li> */}
+          </li>
           {/* <li>
             <Link className='navbar' to="/profile">Profile</Link>
           </li> */}
           <li>
-            <Link className='navbar' to="/login">Log out </Link>
+            <Link className='navbar' to="/login">Log out</Link>
           </li>
         </ul>
       </nav>

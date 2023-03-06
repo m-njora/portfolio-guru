@@ -2,9 +2,8 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background: linear-gradient(90deg, #FF00A0 0%, #333399 100%);
   padding: 20px 80px;
-  border-radius: 16px;
 
 }
 
@@ -25,7 +24,7 @@ nav{
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
-    color:  #586E75;
+    color:  #ffff;
     transition: 0.3s ease-in-out;
   }
   /* .navbar li a:hover{

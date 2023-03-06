@@ -1,13 +1,17 @@
-body{
-  background-color: #ECF0F1;
+@import url("https://fonts.googleapis.com/css?family=Pacifico:400,800");
+@import url("https://fonts.googleapis.com/css?family=ABeeZee:400,800");
 
-}
+
+/* body{
+  background: linear-gradient(90deg, #FF00A0 0%, #333399 100%);
+
+} */
 .about-container {
-    margin: 50px;
+    /* margin: 50px; */
     text-align: center;
     position: relative;
     display: flex;
-    background-color: #ECF0F1;
+    background: linear-gradient(90deg, #FF00A0 0%, #333399 100%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -18,15 +22,49 @@ body{
 
   
   .about-container h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    background: linear-gradient(90deg, #FF00A0 0%, #333399 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #FFFFFF;
+
+
+      /* position: absolute;
+*/
+      /* width: 467px;  
+      height : 173;
+      left: 506px;
+      top: 259px; 
+      font-style: normal;
+      line-height: 91px;
+      text-align: center;
+       */
+
+    
+  }
+  .port{
+    font-family: 'ABeeZee';
+    font-size: 50px;
+    letter-spacing: 0.1em;
 
   }
+  
+  .guru{
+    font-family: 'Pacifico';
+    font-weight: bold;
+
+  }
+  .about-container h2 {
+    
+      color: #FFFFFF;
+      font-family: 'Pacifico';
+      font-style: normal;
+      font-weight: 400;
+      /* width: 295px;
+      height: 72px;
+      font-size: 100px;
+      line-height: 91.04%;
+      text-align: center;
+       */}
+    
+  
+
   .container {
     display: flex;
     background-color: #ECF0F1;
@@ -50,8 +88,8 @@ body{
     position: absolute;
     width: 295px;
     height: 72px;
-    left: 240px;
-    top: 150px;
+    left: 140px;
+    top: 240px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -59,7 +97,7 @@ body{
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.06em;
-    color: #586E75;
+    color: #000;
 
 
 
@@ -69,8 +107,8 @@ body{
     position: absolute;
     width: 295px;
     height: 72px;
-    right: 240px;
-    top: 150px;
+    right: 140px;
+    top: 240px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -78,7 +116,7 @@ body{
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.06em;
-    color: #586E75;
+    color: #000;
 
 
   }
@@ -87,17 +125,21 @@ body{
   p {
     font-size: 1.2rem;
     margin-bottom: 40px;
-
+    color: #fff;
+    padding-top: 5px;
   }
   
   .about-container button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background:linear-gradient(90deg, #FF00A0 0%, #333399 100%);
-    box-shadow: -4px -4px 12px rgba(240, 4, 160, 0.19), 4px 4px 8px #FFFFFF, inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-    color: white;
-    border: none;
-    border-radius: 16px;
-    cursor: pointer;
-    }
+    border-radius: 20px;
+    border: 1px solid #ECF0F1;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #ECF0F1;
+    /* box-shadow: -4px -4px 12px rgba(240, 4, 160, 0.19), 4px 4px 8px #FFFFFF, inset 0px 0px 4px rgba(0, 0, 0, 0.25); */
+
+     }
   
