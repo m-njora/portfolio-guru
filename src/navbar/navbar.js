@@ -16,9 +16,9 @@ import { Link } from'react-router-dom'
       <nav className="navbar">
         <h2>Portfolio Guru</h2>
         <ul>
-          <li>
+          {/* <li>
             <Link className='navbar' to="/">About</Link>
-          </li>
+          </li> */}
           {/* <li>
             <Link className='navbar' to="/profile">Profile</Link>
           </li> */}

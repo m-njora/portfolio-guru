@@ -3,7 +3,7 @@ import * as Components from './Components'
 import './login.css'
 import { Redirect } from 'react-router-dom';
 
-function Login({onLogin}) {
+function Login() {
 
   const [loggedIn, setLoggedIn] = useState(false);
   const [signIn, toggle] = React.useState(true);
@@ -63,6 +63,7 @@ function Login({onLogin}) {
   };
 
     return(
+      <div className="login">
         <Components.Container>
                 {loggedIn && <Redirect to="/profile" />}
 
@@ -113,6 +114,7 @@ function Login({onLogin}) {
             </Components.OverlayContainer>
 
         </Components.Container>
+      </div>
     )
 }
 

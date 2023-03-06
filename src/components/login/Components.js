@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: #ECF0F1;
-    border-radius: 16px;
-    box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.25), -4px -4px 8px rgba(255, 255, 255, 0.75), 8px 8px 12px rgba(189, 195, 199, 0.25), 4px 4px 8px rgba(189, 195, 199, 0.75);
-    position: relative;
-    overflow: hidden;
-    width: 678px;
-    max-width: 100%;
-    min-height: 400px;
-    `;
+  background-color: #ECF0F1;
+  border-radius: 16px;
+  box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.25), -4px -4px 8px rgba(255, 255, 255, 0.75), 8px 8px 12px rgba(189, 195, 199, 0.25), 4px 4px 8px rgba(189, 195, 199, 0.75);
+  position: relative;
+  overflow: hidden;
+  width: 678px;
+  max-width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const SignUpContainer = styled.div`
     position: absolute;
