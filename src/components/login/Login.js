@@ -14,36 +14,38 @@ function Login() {
   const handleRegister = () => {
 
 
-    fetch("http://127.0.0.1:9292/auth/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        password: password
+      fetch("https://portfolio-back-end-f9we.onrender.com/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          password: password,
+        }),
       })
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(response.status);
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-
-  };
-
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(response.status);
+          }
+          return response.json();
+        })
+        .then((data) => {
+          // Handle successful registration
+          console.log(data);
+          setLoggedIn(true);
+        })
+        .catch((error) => {
+          // Handle registration error
+          console.error(error);
+        });
+    
+  }
   const handleLogin = (event) => {
     event.preventDefault();
 
-    fetch("http://127.0.0.1:9292/auth/login", {
+    fetch("https://portfolio-back-end-f9we.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
